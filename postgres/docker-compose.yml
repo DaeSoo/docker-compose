@@ -5,9 +5,9 @@ services:
     image: postgres:11-alpine
     environment:
       TZ: Asia/Seoul
-      POSTGRES_USER: postgres_user
-      POSTGRES_PASSWORD: changeme
-      POSTGRES_DB: test_db
+      POSTGRES_USER: ddd_sevice
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ddd_db
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
     networks:
